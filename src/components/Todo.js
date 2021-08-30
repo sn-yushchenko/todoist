@@ -1,12 +1,13 @@
-import React from 'react';
+import React  from 'react';
 
-function Todo({key, todo}){
+function Todo({ todo, delTodo, count}){
+
     return(
-        <div>
-            <ul>
-                <li key={key}>{todo}</li>
-            </ul>
-        </div>
+        <tr key={todo.id}>
+            <th scope="row">{todo.count}</th>
+            <td>{todo.value}</td>
+            <td><button onClick = {()=>delTodo(todo.id)}>X</button></td>
+        </tr>
     )
 }
 
