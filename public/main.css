@@ -1,0 +1,10 @@
+.header{
+    height: 100px;
+    display: flex;
+    background-color: aqua;
+    color: white;
+}
+.header-name{
+    margin:auto;
+    width: 300px;
+}
